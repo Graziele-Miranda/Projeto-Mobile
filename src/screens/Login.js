@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TextInput, Button, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import InputText from '../components/InputText';
 import {useState} from 'react';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
@@ -7,7 +7,7 @@ import Botao from '../components/Botao';
 
 const Login = props => {
   const [email, setEmail] = useState('');
-  const [password, setSenha] = useState('');
+  const [senha, setSenha] = useState('');
 
   const criarConta = () => {
     props.navigation.navigate('Nova Conta');
@@ -36,7 +36,7 @@ const Login = props => {
         />
         <InputText
           texto="Senha"
-          value={password}
+          value={senha}
           onChangeText={setSenha}
           keyboardType="default"
           campoSenha={true}

@@ -1,12 +1,11 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import InputText from '../components/InputText';
 import {useState} from 'react';
 import Botao from '../components/Botao';
 
 const Login = props => {
   const [txtEmail, setEmail] = useState('');
-  const [txtSenha, setSenha] = useState('');
 
   const recuperar = () => {
     props.navigation.navigate('Login');

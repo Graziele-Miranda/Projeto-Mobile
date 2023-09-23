@@ -1,7 +1,6 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
-import {Text} from 'react-native';
 
 import Login from './src/screens/Login';
 import NovaConta from './src/screens/NovaConta';
